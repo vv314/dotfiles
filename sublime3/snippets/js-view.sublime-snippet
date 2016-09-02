@@ -1,0 +1,58 @@
+<snippet>
+    <content><![CDATA[
+define(['zepto', 'underscore', 'backbone','context', 'template/template', 'view/common/view-dialog'], 
+  function(\$, _, Backbone, Context, jst, Dialog) {
+    var dialogObj = new Dialog(),
+        loading = dialogObj.loading,
+        alert = dialogObj.alert;
+
+    var UI = {
+      wrapper: '.wrap',
+      action: '.action'
+    };
+    var MainView  = Backbone.View.extend({
+      template: jst['templates/${1:temp}.html'],
+      el: \$('body'),
+      events: function() {
+        var events = {};
+        events['tap ' + UI.ele] = 'action';
+       
+        return events;
+      },
+     
+      initialize: function(){
+        this.url = Context.getUrl();
+        this.render();
+      },
+
+      render: function() {
+        var self = this,
+            dataModel = new Backbone.Model();
+        dataModel.save(null,{
+          url:self.url+'/api/goods/get_index_goods_list', 
+            success: function (col, res) {
+              if(res.code == 200) {
+                var resp = res.data;
+                var temp = self.template({});
+                self.\$el.find(UI.wrapper).html(temp);
+              } else {
+                alert(res.msg);
+              }
+            }
+        });
+        return this.\$el;
+      },
+
+      action: function() {
+
+      }
+  });
+
+  new MainView();
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>bb:view</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.js</scope> -->
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+/*! layer.js start */
+.layermcont {word-wrap: break-word;}
+.layermchild h3 {margin:0}
+.layermbox0 .layermchild {width: 75%;}
+.layermbox .layermmain .section {display: table-cell;padding-top:150px;
+vertical-align: top;text-align: center;}
+/*! layer.js end */
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>.layer</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.css</scope>
+</snippet>

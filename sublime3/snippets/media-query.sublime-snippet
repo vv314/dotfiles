@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+/* 分辨率适配 */
+@media screen and (min-width:360px) {
+
+}
+
+@media screen and (min-width:400px) {
+
+}
+
+@media screen and (min-width:600px) {
+    
+}
+
+@media screen and (min-width:768px) {
+    .wrapper {width:768px;}
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>.screen</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.css</scope>
+</snippet>

@@ -1,0 +1,27 @@
+[
+    { "keys": ["shift+alt+a"], "command": "alignment" },
+    { "keys": ["alt+/"], "command": "auto_complete" },
+    { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
+    { "keys": ["ctrl+alt+d"], "command": "goto_definition" },
+    {
+        "keys": ["ctrl+alt+'"],
+        "command": "quote_html",
+        "args": {
+            "action": "single"
+        }
+    },
+    {
+        "keys": ["ctrl+alt+k"],
+        "command": "file_header_new_file",
+        "args":{
+            "paths": []
+        }
+    },
+    {
+        "keys": ["ctrl+alt+j"],
+        "command": "file_header_add_header",
+        "args":{
+            "paths": []
+        }
+    }
+]
