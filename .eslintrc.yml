@@ -1,0 +1,43 @@
+env:
+  browser: true  # 浏览器全局变量(window, document...)
+  node: true  # node全局变量(global)
+  commonjs: true  # CMD规范(require, export)
+  jquery: true  # jQuery全局变量($)
+  es6: true  # es6语法(let, const...)
+  amd: true  # AMD规范(define(), require())
+extends: 'eslint:recommended'  # 继承基本配置(https://github.com/eslint/eslint/blob/master/conf/eslint.json)
+rules:
+  indent:  # 缩进
+    - error
+    - 2  # 代码缩进（空格）
+    - VariableDeclarator:  # 变量声明符缩进
+        var: 2
+        let: 2
+        const: 3
+      SwitchCase : 1
+  no-unused-vars:   # 检查已定义未使用变量
+    - warn
+    - vars: local  # 变量范围 [本地 | 全局]
+      args: none  # 不检查参数使用
+  quotes:  # 引号风格
+    - error
+    - single
+  semi:  # 分号风格
+    - error
+    - always
+    - omitLastInOneLineBlock: true
+  eqeqeq:  # 使用全等(===)
+    - warn
+  no-console: off  # 禁止console
+  no-empty: off  # 禁止空代码块
+  semi-spacing:  # 分号与空格
+    - error
+    - before: false  # 分号前出现空格
+      after: true  # 分号后出现空格
+  comma-spacing:  # 逗号与空格
+    - error
+    - before: false  # 逗号前出现空格
+      after: true  # 逗号后出现空格
+  linebreak-style:  # 换行风格
+    - error
+    - unix
