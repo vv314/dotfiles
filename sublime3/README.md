@@ -1,5 +1,5 @@
 # Sublime Text 3 常用插件
-在安装sublime插件前，需要先安装sublime的包管理工具(`Package Control`)，使用快捷键<kbd>ctrl</kbd> + <kbd>`</kbd>
+在安装sublime插件前，需要事先装好sublime的包管理工具(`Package Control`)，使用快捷键<kbd>ctrl</kbd> + <kbd>`</kbd>打开控制台，按[此步骤](https://packagecontrol.io/installation#st3)操作。
 
 
 ## 编码
