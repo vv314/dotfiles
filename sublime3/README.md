@@ -1,4 +1,6 @@
-# Sublime3常用插件
+# Sublime Text 3 常用插件
+在安装sublime插件前，需要先安装sublime的包管理工具(`Package Control`)，使用快捷键<kbd>ctrl</kbd> + <kbd>`</kbd>
+
 
 ## 编码
 - Emmet
@@ -23,7 +25,6 @@
 -  Vue Syntax Highlight
 
 ## 文档&提示
-- Tag
 - HTML5
 - Zeal
 - jQuery
