@@ -3,39 +3,34 @@
 
 
 ## 编码
-- Emmet
-- DocBlockr
-- Autoprefixer
-- BracketHighlighter
-- Color Hightlighter
-- QuoteHTML
+- [Emmet](https://github.com/sergeche/emmet-sublime)  高效编码
+- [DocBlockr](https://github.com/spadgos/sublime-jsdocs)  文档注释
+- [Autoprefixer](https://github.com/sindresorhus/sublime-autoprefixer)  浏览器厂商自动前缀
+- [BracketHighlighter](https://github.com/facelessuser/BracketHighlighter)  括号高亮
+- [Color Hightlighter](https://github.com/Monnoroch/ColorHighlighter)  色彩高亮
+- [QuoteHTML](https://github.com/mutian/Sublime-Quote-HTML)  html转字符串
 
 ## 代码审查&格式化
-- Alignment
-- JsFormat
-- CSS Format
-- SublimeLinter
-- SublimeLinter-contrib-eslint
+- [JsFormat](https://github.com/jdc0589/JsFormat)  JS格式化
+- [HTML-CSS-JS Prettify](https://github.com/victorporof/Sublime-HTMLPrettify)  可以格式化html, js, css
+- [SublimeLinter](http://sublimelinter.readthedocs.io/en/latest/)  语法风格审查接口
+- [SublimeLinter-contrib-eslint](https://github.com/roadhump/SublimeLinter-eslint)  eslint插件
 
 ## 语法高亮
--  Pug
--  SCSS
--  Sass
--  TypeScript
--  Vue Syntax Highlight
+- [Pug](https://github.com/davidrios/pug-tmbundle)  Pug（原Jade）模板着色
+- [Sass](https://github.com/nathos/sass-textmate-bundle)  SCSS语法高亮
+- [TypeScript](https://github.com/Microsoft/TypeScript-Sublime-Plugin)  TypeScript语法高亮
+- [Vue Syntax Highlight](https://github.com/vuejs/vue-syntax-highlight)  Vue语法高亮
 
 ## 文档&提示
-- HTML5
-- Zeal
-- jQuery
+- [Zeal](https://github.com/vaanwd/Zeal)  zeal文档
+- [jQuery](https://github.com/SublimeText/jQuery)  jQuery文档
 
 ## 通用
-- Paclage Control
-- ChineseLocalizations
-- AdvancedNewFile
-- AutoFileName
-- ConvertToUTF8
-- Material Theme
-- SideBarEnhancements
-
-// @TODO 简介&添加github链接
+- [Package Control](https://packagecontrol.io/installation)  Sublime包管理工具
+- [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)  解决乱码
+- [ChineseLocalizations](https://github.com/rexdf/ChineseLocalization)  菜单中文化
+- [AutoFileName](https://github.com/BoundInCode/AutoFileName)  文件名自动补全
+- [AdvancedNewFile](https://github.com/skuroda/Sublime-AdvancedNewFile)  快捷新建文件
+- [Material Theme](http://equinsuocha.io/material-theme/)  主题
+- [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements)  侧边栏增强
