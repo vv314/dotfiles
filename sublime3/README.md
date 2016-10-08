@@ -21,6 +21,7 @@
 - [Sass](https://github.com/nathos/sass-textmate-bundle)  SCSS语法高亮
 - [TypeScript](https://github.com/Microsoft/TypeScript-Sublime-Plugin)  TypeScript语法高亮
 - [Vue Syntax Highlight](https://github.com/vuejs/vue-syntax-highlight)  Vue语法高亮
+- [Babel](https://github.com/babel/babel-sublime) ES6 jsx语法
 
 ## 文档&提示
 - [Zeal](https://github.com/vaanwd/Zeal)  zeal文档
