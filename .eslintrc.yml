@@ -5,7 +5,19 @@ env:
   jquery: true  # jQuery全局变量($)
   es6: true  # es6语法(let, const...)
   amd: true  # AMD规范(define(), require())
-extends: 'eslint:recommended'  # 继承基本配置(https://github.com/eslint/eslint/blob/master/conf/eslint.json)
+extends: 
+    - 'eslint:recommended'  # 继承基本配置(https://github.com/eslint/eslint/blob/master/conf/eslint.json)
+    - 'plugin:import/errors'  # 继承eslint-plugin-import插件配置
+    - 'plugin:import/warnings'  # 继承eslint-plugin-import插件配置
+settings:
+  import/resolver:  # eslint-plugin-import插件解析配置
+    node:
+      extensions:  # 拓展名支持列表
+        - .js  # .js文件支持，应置于列表首位
+        - .vue  # Vue模板文件
+        - .jsx  # React模板文件
+parserOptions: 
+  sourceType: module
 rules:
   indent:  # 缩进
     - error
