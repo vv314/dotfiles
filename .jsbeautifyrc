@@ -1,0 +1,63 @@
+{
+  // 插件采用 js-beautify 来格式化代码
+  // 插件在执行时会尝试在当前目录寻找 .jsbeautifyrc 文件替代默认配置，
+  // 如果当前目录未找到，则会尝试向父级查找，
+  // 如果均未找到，则会检查用户的 home 目录
+
+  // 使用详情: https://github.com/victorporof/Sublime-HTMLPrettify#using-your-own-jsbeautifyrc-options
+  // js-beautify地址: https://github.com/beautify-web/js-beautify
+  
+  "html": {
+    "allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg"],  // 适用范围
+    "brace_style": "collapse", // 花括号换行风格，[collapse|expand|end-expand|none] 将花括号置于控制语句同行（默认）, 或将花括号置于新行 (Allman / ANSI style), 或仅将结尾括号置于新行, 或保持原位
+    "end_with_newline": false, // 以新行结尾
+    "indent_char": " ", // 缩进格式（空格或 tab）
+    "indent_handlebars": false, // 模板缩进，e.g. {{#foo}}, {{/foo}}
+    "indent_inner_html": false, // 缩进 <head> 与 <body> 块
+    "indent_scripts": "normal", // 缩进内联脚本，[keep|separate|normal] 与script标签【齐平|抽离|正常缩进】
+    "indent_size": 2, // 缩进大小
+    "preserve_newlines": true, // 保留新行 (只检查开始与结束标签之间，忽略标签内容与文本域)
+    "max_preserve_newlines": 1, // 一个代码块内允许的最大新行数 (0 禁止)
+    "unformatted": ["a", "span", "img", "code", "pre", "sub", "sup", "em", "strong", "b", "i", "u", "strike", "big", "small", "pre", "h1", "h2", "h3", "h4", "h5", "h6"], // 列表内的元素不执行格式化
+    "wrap_line_length": 0 // 一行的长度限制 (0 不限制)
+  },
+  "css": {
+    "allowed_file_extensions": ["css", "scss", "sass", "less"], // 适用范围
+    "end_with_newline": false, // 以新行结尾
+    "indent_char": " ", // 缩进格式（空格或 tab）
+    "indent_size": 2, // 缩进大小
+    "newline_between_rules": true, // 规则之间添加新行
+    "selector_separator": " ",  // 选择器之间使用空格分离
+    "selector_separator_newline": true // 选择器之间是否断行 (e.g. "a,\nbr" or "a, br")
+  },
+  "js": {
+    "allowed_file_extensions": ["js", "json", "jshintrc", "jsbeautifyrc", "vue"], // 适用范围
+
+    // 花括号风格
+    //  collapse: (老版默认配置) 将花括号放在控制语句的同一行
+    //  collapse-preserve-inline: (新版默认配置) 与 collapse 相似，但能更好的支持 ES6 的结构与其他新特性。详见 https://github.com/victorporof/Sublime-HTMLPrettify/issues/231
+    //  expand: 将花括号置于新行 (Allman / ANSI style)
+    //  end-expand: 将结尾括号置于新行
+    //  none: 保持原位
+    "brace_style": "collapse-preserve-inline",
+
+    "break_chained_methods": false, // 拆分链式调用的方法为队列
+    "e4x": false, // Pass E4X xml literals through untouched
+    "end_with_newline": false, // 以新行结尾
+    "indent_char": " ", // 缩进格式（空格或 tab）
+    "indent_level": 0, // 缩进级别
+    "indent_size": 2, // 缩进大小
+    "indent_with_tabs": false, // 指定 tabs 缩进, 将覆盖 `indent_size` 和 `indent_char`
+    "jslint_happy": false, // 如果为 true, 将开启 jslint-stricter 模式
+    "keep_array_indentation": false, // 保持数组的缩进
+    "keep_function_indentation": false, // 保持函数的缩进
+    "preserve_newlines": true, // 保留新行
+    "max_preserve_newlines": 2, // 一个代码块内允许的最大新行数 (0 禁止)
+    "space_after_anon_function": false, // 匿名函数的括号前加空格, "function()" vs "function ()"
+    "space_before_conditional": false, // 条件语句的括号前加空格, "if(true)" vs "if (true)"
+    "space_in_empty_paren": false, // 空括号中加空格, "f()" vs "f( )"
+    "space_in_paren": false, // 括号内添加空格内边距, ie. f( a, b )
+    "unescape_strings": false, // 在字符串中保留 \xNN 格式编码的转义字符, "example" vs "\x65\x78\x61\x6d\x70\x6c\x65"
+    "wrap_line_length": 0 // 一行的长度限制 (0 不限制)
+  }
+}
