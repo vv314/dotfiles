@@ -11,10 +11,9 @@
 - [QuoteHTML](https://github.com/mutian/Sublime-Quote-HTML)  html转字符串
 
 ## 代码审查&格式化
-- [JsFormat](https://github.com/jdc0589/JsFormat)  JS格式化
-- [HTML-CSS-JS Prettify](https://github.com/victorporof/Sublime-HTMLPrettify)  可以格式化html, js, css
 - [SublimeLinter](http://sublimelinter.readthedocs.io/en/latest/)  语法风格审查接口
 - [SublimeLinter-contrib-eslint](https://github.com/roadhump/SublimeLinter-eslint)  eslint插件
+- [HTML-CSS-JS Prettify](https://github.com/victorporof/Sublime-HTMLPrettify)  可以格式化html, js, css
 
 ## 语法高亮
 - [Pug](https://github.com/davidrios/pug-tmbundle)  Pug（原Jade）模板着色
