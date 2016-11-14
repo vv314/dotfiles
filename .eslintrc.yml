@@ -40,7 +40,8 @@ rules:
     - omitLastInOneLineBlock: true
   eqeqeq:  # 使用全等(===)
     - warn
-  no-console: off  # 禁止console
+  no-console:
+    - warn  # 禁止console
   no-empty: off  # 禁止空代码块
   semi-spacing:  # 分号与空格
     - error
@@ -50,6 +51,10 @@ rules:
     - error
     - before: false  # 逗号前出现空格
       after: true  # 逗号后出现空格
+  space-before-blocks: error  # 语句块之前加空格
+  spaced-comment:   # 注释符与文本加一个空格
+    - warn
+    - always
   linebreak-style:  # 换行风格
     - error
     - unix
