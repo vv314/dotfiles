@@ -34,3 +34,6 @@
 - [AdvancedNewFile](https://github.com/skuroda/Sublime-AdvancedNewFile)  快捷新建文件
 - [Material Theme](http://equinsuocha.io/material-theme/)  主题
 - [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements)  侧边栏增强
+- [Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview)  Markdown 预览
+- [zz File Icons](https://packagecontrol.io/packages/zz%20File%20Icons)  文件图标
+
