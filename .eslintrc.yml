@@ -1,23 +1,23 @@
+# doc: http://eslint.org/
+
 env:
   browser: true  # 浏览器全局变量(window, document...)
-  node: true  # node全局变量(global)
+  node: true  # node全局变量(global 对象)
   commonjs: true  # CMD规范(require, export)
   jquery: true  # jQuery全局变量($)
   es6: true  # es6语法(let, const...)
   amd: true  # AMD规范(define(), require())
-extends: 
-    - 'eslint:recommended'  # 继承基本配置(https://github.com/eslint/eslint/blob/master/conf/eslint.json)
-    - 'plugin:import/errors'  # 继承eslint-plugin-import插件配置
-    - 'plugin:import/warnings'  # 继承eslint-plugin-import插件配置
-settings:
-  import/resolver:  # eslint-plugin-import插件解析配置
-    node:
-      extensions:  # 拓展名支持列表
-        - .js  # .js文件支持，应置于列表首位
-        - .vue  # Vue模板文件
-        - .jsx  # React模板文件
-parserOptions: 
+  mocha: true # 单元测试全局变量
+globals:
+  SinaObj: true
+extends:
+    - 'eslint:recommended'  # 继承基本配置(https://github.com/eslint/eslint/blob/master/conf/eslint-recommended.js)
+parserOptions:
+  ecmaVersion: 8
   sourceType: module
+  ecmaFeatures:
+    jsx: true
+    experimentalObjectRestSpread: true
 rules:
   indent:  # 缩进
     - error
@@ -34,14 +34,12 @@ rules:
   quotes:  # 引号风格
     - error
     - single
+  no-console: off
   semi:  # 分号风格
-    - error
-    - always
-    - omitLastInOneLineBlock: true
+    - warn
+    - never
   eqeqeq:  # 使用全等(===)
     - warn
-  no-console:
-    - warn  # 禁止console
   no-empty: off  # 禁止空代码块
   semi-spacing:  # 分号与空格
     - error
